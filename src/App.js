@@ -91,7 +91,7 @@ class App extends React.Component {
 
     if (country && city) {
       const api_call = await fetch(//specifies city and country functions and draws info from api server based on whats entered in the form
-        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}`
       );
 
       const response = await api_call.json();
